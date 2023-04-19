@@ -38,14 +38,13 @@ for i in range(r):
     experimento = input()
     n, cobaia = experimento.split()
     n = int(n)
-    total += n
-    match cobaia:
-        case 'C':
-            coelhos += n
-        case 'R':
-            ratos += n
-        case 'S':
-            sapos += n
+    total = total + n
+    if cobaia == 'C':
+        coelhos = coelhos +  n
+    elif cobaia == 'R':
+        ratos = ratos +  n
+    elif cobaia == 'S':
+        sapos = sapos + n
 
 perc_coelhos = coelhos/total
 perc_ratos = ratos/total
