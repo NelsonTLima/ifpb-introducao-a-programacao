@@ -1,10 +1,10 @@
 print("1. Escreva um programa que leia uma frase e a exiba “na vertical”, ou seja, com uma letra em cada linha.\n")
 
-palavra = input("Digite a palavra: ")
-for i in palavra:
-    print(i)
+frase = input("Digite a frase: ")
+for letra in frase:
+    print(letra)
 
-
+#----------------------------------------------
 print("\n2. Escreva um programa que leia uma frase e determine a quantidade de brancos contidos na mesma.\n")
 
 frase = input("Digite uma frase\n-> ")
@@ -15,6 +15,7 @@ for i in frase:
         c += 1
 print("Sua frase contém", c, "espaço(s) branco(s).")
 
+#------------------------------------------------
 print("\n3. Escreva um programa que leia uma frase e a exiba invertida.\n")
 
 frase = list(input("Digite uma frase\n-> "))
@@ -24,6 +25,9 @@ for i in range((len(frase)//2)):
 
 frase = ''.join(frase)
 print(frase)
+
+#-----------------------------------------------
+print("\n4. Conjulgar verbos regulares.")
 
 verbo = input("Digite um verbo: ")
 
